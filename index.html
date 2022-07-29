@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Máscaras</title>
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <form class="formulario">
+            <h1 class="formulario__titulo">Formulário com máscaras</h1>
+
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="campo-numeros">Somente números</label class="formulario__label">
+                <input class="formulario__campo" id="campo-numeros" type="text" data-mascara="numero" placeholder="Ex: 12345">
+            </div>
+
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="campo-cpf">CPF</label class="formulario__label">
+                <input class="formulario__campo" id="campo-cpf" type="text" data-mascara="cpf" placeholder="Ex: 000.000.000-00">
+            </div>
+
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="campo-cnpj">CNPJ</label class="formulario__label">
+                <input class="formulario__campo" id="campo-cnpj" type="text" data-mascara="cnpj" placeholder="Ex: 00.000.000/0000-00">
+            </div>
+
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="campo-cep">CEP</label class="formulario__label">
+                <input class="formulario__campo" id="campo-cep" type="text" data-mascara="cep" placeholder="Ex: 00000-000">
+            </div>
+
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="campo-telefone">Telefone</label class="formulario__label">
+                <input class="formulario__campo" id="campo-telefone" type="text" data-mascara="telefone" placeholder="Ex: (00) 00000-0000">
+            </div>
+
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="campo-moeda">Moeda (R$)</label class="formulario__label">
+                <input class="formulario__campo" id="campo-moeda" type="text" data-mascara="moeda" placeholder="Ex: R$ 000.000,00">
+            </div>
+        </form>
+
+        <script src="assets/js/mascaras.js"></script>
+    </body>
+</html>
