@@ -1,42 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body{
-    align-items: center;
-    display: flex;
+    background-color: #333333;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
-    justify-content: center;
+    padding: 2rem;
+}
+.formulario__titulo{
+    border-left: 4px solid #FAFAFA;
+    box-sizing: border-box;
+    color: #FAFAFA;
+    font-size: 2rem;
+    padding: 0.5rem;
 }
 
 .formulario{
-    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
     box-sizing: border-box;
-    /* padding: 32px 24px; */
-    /* width: 400px */
-}
-
-.formulario__titulo{
-    font-size: 32px;
-}
-
-.formulario__grupo{
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 16px;
+    margin-top: 1.5rem;
+    width: 50%;
 }
 
-.formulario__grupo:first-of-type{
-    margin-top: 24px;
+    .formulario__grupo{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+        .formulario__label{
+            color: #FAFAFA;
+            font-size: 1.25rem;
+        }
+
+        .formulario__campo{
+            background-color: #333333;
+            box-sizing: border-box;
+            border: 1px solid #b8b8b8;
+            color: #FAFAFA;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            /* max-width: 360px; */
+            padding: 0.5rem 1rem;
+            transition: 0.5s;
+            width: 100%;
+        }
+
+        .formulario__campo::placeholder{
+            color: #b8b8b8;
+        }
+
+        .formulario__campo:hover, .formulario__campo:focus{
+            border: 1px solid #FAFAFA;
+        }
+
+.link-repositorio{
+    display: block;
+    color: #FAFAFA;
+    margin-top: 1.5rem;
 }
 
-.formulario__label{
-    font-size: 20px;
-}
-
-.formulario__campo{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    padding: 8px 16px;
-    width: 200px;
+@media screen and (min-width: 425px){
+    .formulario{
+        column-gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
 }
